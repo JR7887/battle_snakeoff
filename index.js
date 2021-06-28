@@ -34,6 +34,7 @@ function handleStart(request, response) {
 
 function handleMove(request, response) {
   var gameData = request.body
+
   var possibleMoves = ['up', 'right', 'down', 'left']
   var move = possibleMoves [gameData.turn % 4]
   //var move = possibleMoves[Math.floor(Math.random() * possibleMoves.length)]
